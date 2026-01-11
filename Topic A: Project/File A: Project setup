@@ -1,0 +1,59 @@
+
+Step 1: Create new SpringMVC project:
+
+- Open Intellij
+- Create new Project 
+- Select Project Generator as Maven Archetype (Imp)
+- JDK 17
+- Catalog: Internal
+- Archetype: maven-archetype-webapp (version 1.0)
+- Group Id: This will your package name (com.springmvc)
+- ArtifactId: This will be your Project name
+- Click on Create
+
+Step 2: Setting Maven(or Gradle):
+
+- In Intellij, Go to top right corner -> Click Settings
+- Search for maven or gradle
+- Set these:
+    Gradle User Home: All dependencies will be downloaded here
+    Gradle Distribution: Choose your gradle-8.1 installed in local
+    Gradle JVM: Select the JDK 17
+- Give OK 
+- Gradle build will start and dependencies will be downloaded
+- You should get Build successful
+
+Step 3: Install Tomcat
+- Download latest Tomcat. You will get the zip file
+- Then go to Intellij -> Settings -> Plugins -> Settings -> Install Plugin from Disk -> Choose the downloaded zip
+- Click OK
+- You can see the plugin installed
+
+Step 4: 
+
+- Click Edit Configurations in top of screen
+- Click Add new in Run/Debug configurations wizard
+- Select Smart Tomcat plugin. (Follow Step 3 if you do not find Smart Tomcat)
+- Configure the Tomcat configurations
+    Tomcat Server: Select your Apache Tomcat installation directory
+    Catalina Base: Default
+    Deployment Directory: Select your Project's webapp directory
+    Use classpath of module: Select your Project's main module (eg: businesscenter.portal.main)
+    Context path: This is the context of your project (eg: /project)
+    Server port: 8080
+    Admin port: 8006(to avoid conflict)
+    VM Options:
+    Extra JVM classpath: Path of domain folder in the project
+
+    Remove "Build" from before launch part of the configuration and Click Run
+    --> Now you can see Tomcat is running successfully
+
+Step 5: Once the Tomcat configuration is done, you can start making changes in the files needed like SSO to run the application.
+
+Step 6: Execute gradle from gradle plugin on the right corner in intellij
+        Go to your project name -> build -> build
+
+Once the build get Success, you can run the Tomcat application by clicking on green arrow
+Logs will start rolling in the console
+
+

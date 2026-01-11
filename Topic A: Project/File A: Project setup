@@ -29,7 +29,7 @@ Step 3: Install Tomcat
 - Click OK
 - You can see the plugin installed
 
-Step 4: 
+Step 4: Tomcat configuration
 
 - Click Edit Configurations in top of screen
 - Click Add new in Run/Debug configurations wizard

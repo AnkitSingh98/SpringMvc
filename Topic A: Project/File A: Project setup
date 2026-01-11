@@ -27,10 +27,10 @@ Step 2: Setting Maven(or Gradle):
 - You should get Build successful
 
 Step 3: Install Tomcat
-- Download latest Tomcat. You will get the zip file
-- Then go to Intellij -> Settings -> Plugins -> Settings -> Install Plugin from Disk -> Choose the downloaded zip
-- Click OK
-- You can see the plugin installed
+- Go to Intellij -> Settings -> Plugins -> search for smart tomcat and install this plugin from marketplace
+- Download latest Tomcat zip and extract it
+- Then go to Intellij -> Settings -> Plugins -> Tomcat Server -> Add your installed Tomcat root file (which has bin) here
+- Click apply and OK
 
 Step 4: Tomcat configuration
 

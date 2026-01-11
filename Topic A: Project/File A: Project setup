@@ -1,4 +1,3 @@
-
 Step 1: Create new SpringMVC project:
 
 - Open Intellij
@@ -10,6 +9,10 @@ Step 1: Create new SpringMVC project:
 - Group Id: This will your package name (com.springmvc)
 - ArtifactId: This will be your Project name
 - Click on Create
+
+    NOTE: If you have already existing project in github
+          Clone your project repo
+          Open Intellij -> File -> Open Project -> Select your project's root path where build.gradle file is located
 
 Step 2: Setting Maven(or Gradle):
 

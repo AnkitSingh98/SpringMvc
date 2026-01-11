@@ -1,1 +1,19 @@
+In Synchrony: I got a mail with 
+instance name: ptplqa01
+password: xyz
 
+- Open SQL Developer
+- Click New Connection
+- Enter below details:
+  UserInfo:
+  Username: 503030793
+  Password: received in mail
+
+  Connection Details:
+  Hostname: vqlptrptldbda01.prvcld.syfbank.com (Ask lead which host to connect)
+  Port: 1535 
+  SID: ptplqa01  { Give the instance name to connect to (received in mail) 
+
+- Test connection and Connect
+
+--------------------------------------------------------------------------------------------------------

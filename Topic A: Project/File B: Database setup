@@ -1,6 +1,18 @@
+Synchrony BC/PC application have two databases:
+1) Portal DB 
+2) Reporting DB
+
+- Both DB have three instances for QA, UAT, Stage
+- So, in total there are 6 instances
+- Raise DB access request for all the 6 instances ---> Means User with your SSO ID will be created in each of the 6 instances and will be given access
+- You will receive password for all the 6 instances
+- Login to these 6 DB instances with Username(your SSO ID) and Password(received in mail)
+
+EXAMPLE:
 In Synchrony: I got a mail with 
-instance name: ptplqa01
-password: xyz
+Instance name: ptplqa01
+Username: SSO ID
+Password: xyz
 
 - Open SQL Developer
 - Click New Connection
